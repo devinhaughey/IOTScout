@@ -76,27 +76,28 @@
 	<section id="about" class="about type-3 padding_60 padbot_120 top_60">
 		<div class="container">
             <!-- Image & Text -->
-		
+		<!--button id="btn_submit_selection" class="button_style">Submit</button-->
             <!-- What we do -->
+            <!--div class="features bottom_120 row"-->
             <div class="features bottom_120 row">
-                <div class="col-lg-3 col-md-6 col-sm-6 service text-center wow fadeInUp" data-wow-delay="1.1s" style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInUp;">
+                <button id="btn_instant_help" class="col-lg-3 col-md-6 col-sm-6 service text-center wow fadeInUp" data-wow-delay="1.1s" style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInUp;">
                     <div class="magic red">
                         <i class="fa fa-bolt" aria-hidden="true"></i>                    
                         <h2 class="title top_15 bottom_15">CALL INSTANT HELP</h2>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 service text-center wow fadeInUp" data-wow-delay="1.1s" style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInUp;">
+                </button>
+                <button id="btn_instant_help" class="col-lg-3 col-md-6 col-sm-6 service text-center wow fadeInUp" data-wow-delay="1.1s" style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInUp;">
                     <div class="magic">
                         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                         <h2 class="title top_15 bottom_15">REPORT INCIDENT</h2>
+                         <h2 class="title top_15 bottom_15">REPORT DENGUE</h2>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 service text-center wow fadeInUp" data-wow-delay="1.1s" style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInUp;">
+                </button>
+                <button id="btn_instant_help" class="col-lg-3 col-md-6 col-sm-6 service text-center wow fadeInUp" data-wow-delay="1.1s" style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInUp;">
                     <div class="magic blue">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             <h2 class="title top_15 bottom_15">FIND FRIENDS</h2>
                     </div>
-                </div>
+                </button>
                 <p class="warning">Note: Pressing the red button, will send help your way as soon as possible. Please press the button when you really need it.</p>
             </div>
         
@@ -109,6 +110,7 @@
  
 
 <!-- Javascripts -->
+<script src="js/dashboard_js.js"></script>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.cubeportfolio.min.js"></script>
@@ -116,6 +118,8 @@
 <script src="js/jquery.vide.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/dashboard_js.js"></script>
+<script src="js/mqttws31.min.js"></script>
 
 <script>
  $(document).ready(function () {
@@ -126,6 +130,7 @@
       'ogv': 'http://kamyonculargaraji.com/1.gif'
     });
  });
+
  </script>
 
 </body>
