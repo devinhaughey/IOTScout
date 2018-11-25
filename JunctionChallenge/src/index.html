@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!--<link rel="stylesheet" href="css/normalize.css">-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/leaflet_v1.3.3.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
+
+  <div id="map"></div>
+  <div class="menu" id="header_panel">
+    <a id="logo"><img src="img/logo-black.png" alt="IoT Scout"></a>
+  </div>
+
+  <div class="container" id="div_information">
+    <form class="example">
+      <input id="myInput" onkeyup="mySearch()" type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>Search...</button>
+    </form>
+    <div id="div_address_table">
+      <table class="table table-striped header-fixed" id = "address_table">
+        <tr>
+          <th>Timestamp</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>Tags</th>
+          <th>Message</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/mqttws31.min.js"></script>
+  <script type="text/javascript" src="js/leaflet_1.3.3.js"></script>
+  <script type="text/javascript" src="js/esri-leaflet.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/leaflet-heat.js"></script>
+  <script> MQTTconnect(); </script>
+  <!--<script> createDeliveryPoints();</script>-->
+
+</body>
+
+</html>

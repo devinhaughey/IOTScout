@@ -6,13 +6,6 @@ from random import randint
 import requests
 import json
 
-data_list1 = [
-  {
-    "latitude": -73.47847,
-    "longitude": -11.44797
-  }
-]
-
 data_list = [
     #{ 'priority':, 'lat':,'long': ,'msg':'','tags':['']},
   {
@@ -1067,7 +1060,6 @@ data_list = [
   }
 ]
 
-
 broker_address = "10.3.141.1"
 broker_port = 1883
 keep_alive = 60
@@ -1083,8 +1075,6 @@ def messageParameters(data_msg):
 
     data_msg["latitude"] = float(lat)
     data_msg['longitude'] = float(lon)
-
-    #msg = str({'priority': 1, 'lat': lat, 'long': lon, 'msg': 'I am here', 'tags': ['fire', 'flood']})
 
     return data_msg
 
