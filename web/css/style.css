@@ -262,7 +262,7 @@ p {
 width:60%;
 }
 .fixed .logo img {
-    width: 54%;
+    width: 75%;
     height: auto;
     margin-top: 0;
     padding-top: 16px;
@@ -278,8 +278,8 @@ header.type-1 {
 header.type-1.fixed {
     position: fixed;
     display: block;
-    background: #fff;
-    border-bottom: solid 1px #dfdfdf
+    background: #FFD552;
+    border-bottom: solid 5px black;
 }
 
 header.type-1.fixed ul li a {
@@ -664,7 +664,9 @@ header.type-1 nav ul li.hassub .submenu li:last-child {
 }
 
 .about .features .service {
-    padding: 0 47px
+    padding: 0 47px;
+    background-color: #FFD552;
+    border-color: black;
 }
 
 .about.type-1 .features .service i {
@@ -2353,6 +2355,4 @@ footer.type-2 .ftr-widget p {
     font-weight: 600;
     color: #ff0020;
 }
-#about{
-background-color: #f5f4f4;
-}
+#about{background-color: #FFD552;}
