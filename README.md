@@ -13,13 +13,17 @@ IoT SCOUT is a mobile application that users and scouts can install on their pho
 - Location 
 - Profile Information
 - Date and Time
+
 The user can request immediate help, report diseases/incidents and also check the status of their friends living in an affected area.
+
 The nearby patrolling scout (Police) carries a raspberry pi that continuously listens to the signals from SCOUT APP being sent via MQTT. They receive 2 kinds of signals.
 - Emergency Help:
+
 Its a signal when the user presses a red button on the app. This happens when the user needs immediate help. 
 - Incident/Disease Report 
+
 This is a signal sent when a user reports an incident like fire, robbery, disease or someone needing help in their surroundings.
-..................
+
 Impacts on society :
 SAVING LIVES IN DANGER
 PREVENTING DISEASE CONTAMINATION
